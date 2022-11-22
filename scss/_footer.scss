@@ -1,0 +1,64 @@
+.footer {
+    background: $blue;
+    color: $white;
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__heading {
+        margin-top: 140px;
+        max-width: 700px;
+        text-align: center;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+        max-width: 475px;
+        text-align: center;
+    }
+
+    &__btn {
+        margin-bottom: 40px;
+        width: 218px;
+        height: 59px;
+        background: $blue-light;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    &__logo-wrapper {
+        width: 260px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 140px;
+    }
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        &:nth-child(1) {
+            background: url(/source/footer01.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            background: url(/source/footer02.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            background: url(/source/footer03.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

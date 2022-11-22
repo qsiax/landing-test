@@ -1,0 +1,45 @@
+.use {
+    background: $blue;
+    color: $white;
+    &__container {
+
+    }
+
+    &__body {
+        display: flex;
+    }
+
+    &__block {
+        padding: 140px 0px;
+        &:nth-child(1) {
+            max-width: 700px;
+            margin-right: 100px;
+        }
+    }
+
+    &__heading {
+        margin-top: 92px;
+    }
+
+    &__text {
+    }
+
+    &__btn {
+        width: 171px;
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $blue-light;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    &__image {
+        width: 550px;
+        height: 479px;
+        background: url(/source/use01.png) center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

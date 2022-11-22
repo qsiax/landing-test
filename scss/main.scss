@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "_ui";
+@import "_about";
+@import "_use";
+@import "_sponsors";
+@import "_footer";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+
+html,
+body {
+    overflow-x: hidden;
+    font-size: 18px;
+    color: $black;
+    font-family: 'Inter', sans-serif;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+._container {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.header {
+    background: $blue;
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__block {
+        display: flex;
+        &:nth-child(1) {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        width: 37px;
+        height: 29px;
+        background: url(/source/logo.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 10px;
+    }
+
+    &__logo-text {
+        padding: 29px 0px;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 34px;
+        color: $white;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        li {
+            list-style: none;
+            margin-right: 32px;
+        }
+    }
+
+    &__btn-wrapper {
+        display: flex;
+    }
+
+    &__btn {
+        padding: 18.5px 40px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.02em;
+        &:nth-child(1) {
+            background: #FFE492;
+            margin-right: 24px;
+            color: #043873;
+        }
+        &:nth-child(2) {
+            background: $blue-light;
+        }
+    }
+}
+
+
+.main {
+    background: $blue;
+    min-height: 100vh;
+    color: $white;
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__block {
+        margin-top: 234px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        font-size: 64px;
+        max-width: 656px;
+    }
+
+    &__text {
+        max-width: 615px;
+    }
+
+    &__btn {
+        width: 219px;
+        height: 63px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $blue-light;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: -0.02em;
+    }
+
+    &__image {
+        width: 684px;
+        height: 456px;
+        background: url(/source/main01.png) center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

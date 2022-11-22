@@ -1,0 +1,57 @@
+.sponsors {
+
+    &__container {
+    }
+
+    &__body {
+    }
+
+    &__block {
+        &:nth-child(1) {
+            margin-top: 140px;
+            margin-bottom: 100px;
+            display: flex;
+            justify-content: center;
+        }
+        &:nth-child(2) {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 140px;
+        }
+    }
+
+    &__heading {
+    }
+
+    &__logo {
+
+        &:nth-child(1) {
+            width: 55.45px;
+            height: 68px;
+            background: url(/source/apple.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2) {
+            width: 287px;
+            height: 62px;
+            background: url(/source/microsoft.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(3) {
+            width: 280px;
+            height: 71px;
+            background: url(/source/slack.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(4) {
+            width: 211px;
+            height: 70px;
+            background: url(/source/google.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
